@@ -1,6 +1,6 @@
 This contains the code related to the Orthofinder and KAAS/KEGG analysis as published in Brinzer, R. et al 2024 The parasitic nematode Haemonchus contortus lacks molybdenum cofactor synthesis, leading to sulphite sensitivity and lethality in vitro (submitted). 
 
-In brief, proteomes were downloaded for multiple worm species, with sheep as an outgroup. After re-naming fasta headers for consistency, primary transcripts were obtained using OrthoFinder. Next, OrthoFinder was used to produce a rooted species tree (with sheep as outgroup), and to identify putative orthologues within Hierarchical Orthogroups (HOGs). 
+In brief, proteomes were downloaded for multiple worm species, with sheep as an outgroup. After re-naming fasta headers for consistency, "primary transcripts" were obtained using OrthoFinder _primary_transcripts.py_. (For clarity, note that this is identifying the longest peptide sequence, and that **proteins** are used throughout this analysis - nucleotide sequences (genome or mRNA) are never used, although terms such as 'genes' may be used in this text). Next, OrthoFinder was used to produce a rooted species tree (with sheep as outgroup), and to identify putative orthologues within Hierarchical Orthogroups (HOGs). 
 
 Using a mixture of unix/linux commands, and R, results were obtained for the following categories using the N0.tsv file in the HOG directory: 
 1. Proteins shared between _Haemonchus contortus_ and _Caenorrhabditis elegans_
